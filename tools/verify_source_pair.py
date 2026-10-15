@@ -54,7 +54,7 @@ def main(argv):
         if "assets/bin/Data/Managed/Assembly-CSharp.dll" not in dlls or len(dlls) != 23:
             raise ValueError("Expected 23 managed DLLs including Assembly-CSharp.dll")
         expected_levels = {DATA+f"level{i}" for i in range(23)}
-        logical = {SPLIT.sub("",p) if SPLIT.fullmatch(p) else p for p in (apk_files | obb_files)}
+        logical = {SPLIT.fullmatch(p).group(1) if SPLIT.fullmatch(p) else p for p in (apk_files | obb_files)}
         if not expected_levels.issubset(logical):
             raise ValueError("One or more expected serialized level0-level22 files missing")
         with zipfile.ZipFile(apk) as arc:
