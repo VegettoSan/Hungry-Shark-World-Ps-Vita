@@ -1,0 +1,54 @@
+# Original game and private assets: never distribute
+*.apk
+*.xapk
+*.obb
+*.vpk
+*.so
+*.dll
+*.unity3d
+*.assetbundle
+*.assets
+*.resS
+*.resource
+*.split[0-9]*
+globalgamemanagers
+mainData
+resources.assets
+level[0-9]*
+/Tool Codex/
+/local-work/
+/input/
+/output/
+/extracted/
+/exports/
+/work/
+/data/
+/Data/
+/Managed/
+/dist/
+/build/
+/builds/
+/private/
+/recovery/
+/Unity2017/
+/Unity2018/
+
+# Unity caches/build intermediates
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pdb
+
+# Local Python/system files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
