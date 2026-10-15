@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "game": "Hungry Shark World",
+  "android_package": "com.ubisoft.hungrysharkworld",
+  "source_version": "2.9.0",
+  "source_version_code": 132,
+  "source_unity": "2017.1.2p4",
+  "source_backend": "Mono",
+  "source_apk_sha256": "6bf41929985b556e6729f3696a02d687da119b04ced1c5cb13590f4ce69fab9d",
+  "source_obb_filename": "main.132.com.ubisoft.hungrysharkworld.obb",
+  "source_obb_sha256": "c35c6daf1514977fdba2101ea994fcbb244f0a757a74b908c1dc3c6203847d72",
+  "target_editor": "2018.2.19f1",
+  "target_platform": "PSP2",
+  "display_name": "Hungry Shark World Vita",
+  "title_id": null,
+  "planned_install_directory": null,
+  "identity_status": "PENDING_OWNER_SELECTION"
+}

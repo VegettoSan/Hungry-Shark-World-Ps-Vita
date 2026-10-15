@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "application": "Hungry Shark World 2.9.0 (Unity 2017.1.2p4, Mono)",
+  "baseline_apk_sha256": "6bf41929985b556e6729f3696a02d687da119b04ced1c5cb13590f4ce69fab9d",
+  "baseline_obb_sha256": "c35c6daf1514977fdba2101ea994fcbb244f0a757a74b908c1dc3c6203847d72",
+  "current_phase": "P00",
+  "phases": [
+    {
+      "id": "P00",
+      "name": "Reproducible source pair and original editor",
+      "gate": "Exact APK+OBB hashes/CRC, Unity 2017.1.2p4 installed, Android reference matrix and environment inventory",
+      "status": "ACTIVE",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P01",
+      "name": "Complete private assets and code recovery",
+      "gate": "Reconstruct all APK+OBB split files, recover Mono scripts and Unity graph, log missing references",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P02",
+      "name": "Original Unity 2017 editor restore",
+      "gate": "Recovered Unity 2017 project imports and compiles, references validated",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P03",
+      "name": "Unity 2017 gameplay restoration",
+      "gate": "Actual original gameplay PC Play Mode, audio/UI/levels/Android comparison validated",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P04",
+      "name": "Frozen Unity 2017 baseline",
+      "gate": "Reproducible clean Unity 2017 reference plus cold save/load and owner sign-off",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P05",
+      "name": "Controlled Unity 2018.2 migration",
+      "gate": "Clone compiles in Unity 2018.2.19f1 with evidence-backed fixes",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P06",
+      "name": "Unity 2018.2 desktop parity",
+      "gate": "Equivalent 2018 editor gameplay/regressions pass",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P07",
+      "name": "PSP2 toolchain smoke test",
+      "gate": "Independent Unity PSP2 build boots on physical Vita with logs",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P08",
+      "name": "World Vita boot and menus",
+      "gate": "Original World scene and UI boot/render on physical Vita",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P09",
+      "name": "World Vita core gameplay",
+      "gate": "Swimming, feeding, enemy loop, levels, death and progression tested on real Vita",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P10",
+      "name": "Vita controls, audio, saves and lifecycle",
+      "gate": "Controls, audio, save/load, offline flows, suspend and resume work on hardware",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P11",
+      "name": "Vita performance and stability",
+      "gate": "Hardware memory/FPS profiling and repeatable stability passes",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    },
+    {
+      "id": "P12",
+      "name": "Release readiness",
+      "gate": "Device regression, lawful distribution/data converter and complete instructions reviewed",
+      "status": "LOCKED",
+      "evidence": [],
+      "approved_by": null,
+      "approved_at": null,
+      "approval_reference": null
+    }
+  ]
+}
