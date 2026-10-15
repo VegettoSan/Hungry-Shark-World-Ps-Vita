@@ -33,7 +33,7 @@ Owner-approved **testing format inherited from Evolution:** desktop gameplay evi
 
 ## Scope and non-goals
 
-- Keep *World* entirely separate from *Evolution* (different game/package/engine baseline/assets, future Title ID and release).
+- Keep *World* entirely separate from *Evolution* (different game/package/engine baseline/assets, Title ID and release). World **`HGSKW1178`** / **Hungry Shark World Vita** is owner-selected; Evolution **`HGSKE1178`** must never be reused. Planned World title location: `ux0:app/HGSKW1178/`; verify actual PSP2 layout later. Identity approval is not a phase-gate approval.
 - Use Mono `Assembly-CSharp.dll` plus Unity serialized data, but do not assume automatic full source recovery.
 - Avoid Android JNI/FalsoJNI/VitaGL loader speculation as substitute for the **native Unity PSP2 player** route.
 - Do not mix the 3.0.2 APK with 2.9.0 OBB without independent compatibility evidence.

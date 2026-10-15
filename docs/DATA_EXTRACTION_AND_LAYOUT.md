@@ -15,7 +15,8 @@ Inputs: user-owned Hungry Shark World **2.9.0 / 132 APK** and matching **main.13
 
 ## Vita paths (unverified for this port)
 
-- `ux0:app/<FUTURE_WORLD_TITLE_ID>/` / runtime `app0:` is the proposed installed application location; **Title ID not selected**.
+- **Owner-selected (2026-10-15) PSP2 Title ID:** `HGSKW1178`; **display name:** Hungry Shark World Vita. Canonical definition: [`config/port_identity.json`](../config/port_identity.json).
+- `ux0:app/HGSKW1178/` is the planned installed title location; runtime mount `app0:` is expected. Both require PSP2 physical test before treating the exact internal file layout as verified.
 - `Application.dataPath`, `streamingAssetsPath`, `persistentDataPath` on PSP2: capture real values during P07–P08 tests. Do not guess them from Android or another port.
 - Save files must use verified writable storage separate from installed app payload. Test retention through reinstall/update. Never overwrite generated `eboot.bin`, `sce_sys` or PSP2 Unity Data with an Android extraction.
 - Optional **xdelta3** end-user patch delivery can be studied after successful source/target hashes, real PSP2 data layout, test coverage and distribution-rights review. It is **not** an APK→Vita converter.

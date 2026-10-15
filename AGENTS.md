@@ -25,7 +25,7 @@ Scope: **the entire Hungry Shark World PS Vita repository**. Read in order:
 - Unity 2018 PSP2 player/module **must be verified independently**; an editor installation or a previous Halo 2D build does not prove the module is installed. Android `libunity.so`/`libmono.so` cannot simply run as Vita native binaries.
 - Unity 2018.2.19f1 is the **preferred** Vita-target editor from the owner's Halo 2D reference. Do not silently replace with Unity 2018.3+; 2018.3 dropped the legacy PSP2 target.
 - For real-device tests, target stable ~30 FPS; consider 60 only if physically measured. No FPS claims from editor-only tests. Gameplay first, optimizations only in P11.
-- Vita display name is *Hungry Shark World Vita*; **a PSP2 Title ID has not been chosen**. Do NOT reuse Evolution's `HGSKE1178` or Halo 2D's IDs. Identity will be locked once the owner selects it.
+- **Owner-selected PS Vita identity (2026-10-15):** Title ID **`HGSKW1178`**; display name **Hungry Shark World Vita**. The canonical values are in [`config/port_identity.json`](config/port_identity.json); planned installed title path is `ux0:app/HGSKW1178/` (runtime `app0:`; actual PSP2 packaging/path behavior still UNTESTED). Never reuse Evolution's `HGSKE1178` or Halo 2D identity. Identity selection **does not approve or unlock a phase**.
 
 ## Git hygiene, provenance and release
 - Keep all raw APK/OBB, exported Unity project, original/decompiled DLL/C# code, proprietary assets, tool binaries and SDK materials private and ignored. Never expose identifying personal machine paths or keys in logs.

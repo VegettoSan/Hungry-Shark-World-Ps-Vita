@@ -50,20 +50,14 @@ def validate_identity(data):
         if data.get(key) != value:
             fail(f"config/port_identity.json: {key} mismatch")
     title = data.get("title_id")
-    if title is None:
-        if data.get("planned_install_directory") is not None:
-            fail("Do not invent Vita install directory while title ID is unchosen")
-        if data.get("identity_status") != "PENDING_OWNER_SELECTION":
-            fail("Unchosen Vita title ID needs PENDING_OWNER_SELECTION")
-    else:
-        if not isinstance(title, str) or not re.fullmatch(r"[A-Z0-9]{9}", title):
-            fail("Vita title ID must contain exactly 9 uppercase alphanumerics")
-        if title == "HGSKE1178":
-            fail("Do not reuse the separate Evolution Vita Title ID")
-        if data.get("planned_install_directory") != f"ux0:app/{title}/":
-            fail("PS Vita install directory must match World title ID")
-        if data.get("identity_status") != "OWNER_APPROVED":
-            fail("Title ID must be explicitly approved by repository owner")
+    if title != "HGSKW1178" or not re.fullmatch(r"[A-Z0-9]{9}", str(title)):
+        fail("World PSP2 Title ID must be HGSKW1178")
+    if title == "HGSKE1178":
+        fail("World must not reuse Evolution's Title ID")
+    if data.get("planned_install_directory") != "ux0:app/HGSKW1178/":
+        fail("World app installation directory does not match Title ID")
+    if data.get("identity_status") != "OWNER_APPROVED":
+        fail("World identity requires explicit owner approval")
 
 
 def validate_ledger(data):
@@ -124,7 +118,7 @@ def main():
         ledger = json.loads((ROOT / "docs/PHASE_GATES.json").read_text(encoding="utf-8"))
         validate_identity(identity)
         validate_ledger(ledger)
-        print("WORLD IDENTITY OK: 2.9.0/132 Unity 2017 Mono, PSP2 title pending")
+        print("WORLD IDENTITY OK: HGSKW1178 / Hungry Shark World Vita, 2.9.0/132 Unity 2017 Mono")
     except (OSError, ValueError, KeyError, TypeError) as exc:
         print(f"PHASE GATES ERROR: {exc}", file=sys.stderr)
         return 1

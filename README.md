@@ -14,6 +14,17 @@ Research and development for a **native PlayStation Vita port** of *Hungry Shark
 - The owner reports the original Android installation downloaded its data and is playable; **this does not validate a reconstructed editor build**.
 - Version **3.0.2** is a *separate Mono comparison reference*, not an interchangeable OBB or the port baseline.
 
+## PS Vita identity (owner selected 2026-10-15)
+
+| Property | Value |
+| --- | --- |
+| **Title ID** | **`HGSKW1178`** |
+| **Display name** | **Hungry Shark World Vita** |
+| Planned installed title directory | `ux0:app/HGSKW1178/` |
+| Runtime application mount | `app0:` (PSP2 behavior requires device verification) |
+
+The [canonical identity file](config/port_identity.json) is now owner-approved. This identity declaration does not imply a Vita executable exists or advance the phase ledger.
+
 ## Non-negotiable engine order
 
 1. Audit the original **2.9.0 APK + matching OBB** and validate a clean Unity **2017.1.2p4** editor.

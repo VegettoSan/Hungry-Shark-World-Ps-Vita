@@ -12,7 +12,7 @@
   "target_editor": "2018.2.19f1",
   "target_platform": "PSP2",
   "display_name": "Hungry Shark World Vita",
-  "title_id": null,
-  "planned_install_directory": null,
-  "identity_status": "PENDING_OWNER_SELECTION"
+  "title_id": "HGSKW1178",
+  "planned_install_directory": "ux0:app/HGSKW1178/",
+  "identity_status": "OWNER_APPROVED"
 }
