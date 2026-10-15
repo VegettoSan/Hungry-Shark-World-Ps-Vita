@@ -16,5 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify Python checker syntax (no game assets required)
+        run: python3 -m py_compile tools/check_phase_gates.py tools/verify_source_pair.py
       - name: Verify sequential owner-approved gates and World source identity
         run: python3 tools/check_phase_gates.py
