@@ -22,3 +22,9 @@ Inputs: user-owned Hungry Shark World **2.9.0 / 132 APK** and matching **main.13
 - Optional **xdelta3** end-user patch delivery can be studied after successful source/target hashes, real PSP2 data layout, test coverage and distribution-rights review. It is **not** an APK→Vita converter.
 
 All files and outputs containing copyrighted game content remain excluded from Git.
+
+## Future end-user APK+OBB xdelta design (P12 LOCKED)
+
+A public **Windows extractor + patch** is an intended user-experience candidate, **not yet implemented or approved**. Unlike Evolution's APK-only reference, **World 2.9.0 (132) needs both its APK and matching `main.132.com.ubisoft.hungrysharkworld.obb`**; the user must supply both from their own game copy. A single xdelta3 `-s` input accepts one file, so a multi-source workflow would need a deterministic local combined source, distinct patches, or another evidenced strategy. A missing OBB is an error, not a valid incomplete install.
+
+The patch can reconstruct only a **prepared and verified PSP2 target pack**; it does not port Unity data or convert shaders, assets or code automatically. Source verification, full output checksum, safe installation paths, save retention and release rights are blocking conditions. See [the detailed World-specific pending design and acceptance checklist](XDELTA_APK_OBB_DISTRIBUTION_PENDING.md). **P00 remains ACTIVE; P12 remains LOCKED.**
