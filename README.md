@@ -40,6 +40,7 @@ Do not skip or auto-approve any stage. Stage ledger: [docs/PHASE_GATES.json](doc
 - [Porting plan and approvals](docs/PORTING_PLAN.md).
 - [Technical audit with evidence](docs/TECHNICAL_AUDIT.md).
 - [APK/OBB extraction and proposed Vita layout](docs/DATA_EXTRACTION_AND_LAYOUT.md).
+- [Diseño pendiente: extractor APK+OBB, xdelta3 y distribución final de datos (P12)](docs/XDELTA_APK_OBB_DISTRIBUTION_PENDING.md).
 - [Experiment journal](docs/EXPERIMENTS.md).
 - [Lecciones técnicas de Evolution transferibles a World — investigación P00 (2026-10-17)](docs/EVOLUTION_TRANSFER_NOTES_2026-10-17.md).
 - [Tools and local environment](docs/TOOLS.md).
