@@ -41,6 +41,7 @@ Do not skip or auto-approve any stage. Stage ledger: [docs/PHASE_GATES.json](doc
 - [Technical audit with evidence](docs/TECHNICAL_AUDIT.md).
 - [APK/OBB extraction and proposed Vita layout](docs/DATA_EXTRACTION_AND_LAYOUT.md).
 - [Experiment journal](docs/EXPERIMENTS.md).
+- [Lecciones técnicas de Evolution transferibles a World — investigación P00 (2026-10-17)](docs/EVOLUTION_TRANSFER_NOTES_2026-10-17.md).
 - [Tools and local environment](docs/TOOLS.md).
 
 ## Separation and distribution
