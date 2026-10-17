@@ -14,7 +14,7 @@
 | --- | --- | --- | --- |
 | Motor | Unity **5.6.4p3**, Mono | Unity **2017.1.2p4**, Mono; **23 DLL Managed** | **CANDIDATO:** reutilizar flujo de AssetRipper/ILSpy y trazabilidad GUID/fileID; importar primero en **2017.1.2p4**, no en 2018 directamente |
 | Distribución original | Unity Data en APK; 18 escenas serializadas | **APK + OBB inseparables**; `level0` en APK, `level1`–`level22` en OBB | **CONFIRMADO-WORLD:** combinar ambos sin colisiones; no usar extractor ni manifiesto de Evolution |
-| División de datos | `.splitN` reconstruidos en Evolution | **6 grupos / 68 fragmentos**: `sharedassets0.assets` (37, APK); `level17` (3), `level21` (2), `level22` (3), `sharedassets17.assets` (18), `sharedassets3.assets` (3), `sharedassets7.assets` (2) en OBB | **CONFIRMADO-WORLD:** ordenar por sufijo numérico y preservar íntegros los objetos antes de AssetRipper |
+| División de datos | `.splitN` reconstruidos en Evolution | **7 grupos / 68 fragmentos**: `sharedassets0.assets` (37, APK); `level17` (3), `level21` (2), `level22` (3), `sharedassets17.assets` (18), `sharedassets3.assets` (3), `sharedassets7.assets` (2) en OBB | **CONFIRMADO-WORLD:** ordenar por sufijo numérico y preservar íntegros los objetos antes de AssetRipper |
 | Salida PSP2 | Evolution tiene builds PSP2 de prueba ejecutados en consola | **No hay build Vita/Editor World verificado** | No transferir las afirmaciones de FPS, jugabilidad, memoria ni compatibilidad |
 | Identidad | `HGSKE1178` | `HGSKW1178` | No cruzar Title ID, rutas de guardado, partidas, recursos ni `Assembly-CSharp.dll` |
 
