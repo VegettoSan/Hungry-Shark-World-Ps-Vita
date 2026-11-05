@@ -64,6 +64,37 @@ a los registrados arriba y en PHASE_GATES; sin nueva extracción ni descargas.
 
 | 2026-11-05 07:49 UTC | MIG18-FINAL-BOOT-001 | Unity2018 instancia existente; bridge temporal privado `playboot:FinalBoot2018.json`, 25s, sin segunda instancia; API PluginImporter | **VERIFIED PASS:** 25,47s/645frames, flujo original hasta FrontEnd/3DBackground/Sharks, 0 errores registrados y consola final0. Any=true/excludePSP2=true/excludeAndroid=false. No prueba GPU/player Vita ni cierre tras gameplay | FinalBoot2018 y Platform2018 privados. Observadores desactivados al terminar; continuidad manual desde SplashLoader |
 
+## Primer VPK PSP2 privado autorizado — 2026-11-05 UTC
+
+Excepción expresa del propietario para compilar y empaquetar una prueba privada.
+No aprueba fases ni distribución: main, P00 ACTIVE y 0/13 aprobaciones; ledger intacto.
+Mismos inputs verificados: APK `6bf41929985b556e6729f3696a02d687da119b04ced1c5cb13590f4ce69fab9d`
+y OBB `c35c6daf1514977fdba2101ea994fcbb244f0a757a74b908c1dc3c6203847d72`.
+Unity **2018.2.19f1 / PSP2 Mono2x**, .NET2 Subset, Development, SDK y herramientas locales;
+sin descargas, publicación, nueva rama, modificación de Evolution o instalación en Vita.
+
+| Fecha UTC | ID | Procedimiento | Resultado real y evidencia privada |
+| --- | --- | --- | --- |
+| 2026-11-05 | VPK01-PREP | Checkpoint de configuración, 23 escenas originales; copia privada Unity2018; API del módulo y plugins | **VERIFIED:** PSP2 soportado, Mono2x, perfil/bindings PSP2 y proveedores offline. Unity2017: 20.869 hashes sin cambios. Bloqueo temporal de escrituras de procesos llevó a usar copia privada de build en C:, sin atribuir fallo físico a E: |
+| 2026-11-05 | VPK01-FAILURES | Builds01–04, mismos recursos, correcciones dirigidas | **FAIL preservados:** lightmap ETC1; cuota de save cero; Content ID inválido por formato/longitud. Algunos fallos del postproceso retornaron Succeeded con un error: no se cuentan como PASS. Cuota 8192KB con margen sobre respaldo World de 2.209.830bytes; ID técnico nativo validado antes del build |
+| 2026-11-05 | VPK01-TEXTURES | Reimportación PSP2 de 426 PNG con caché BC7; único lightmap NativeFormatImporter ETC1 decodificado a RGBA32 | **VERIFIED:** sin cambios de GUID o propiedades de iluminación, 2048x2048/12 mips; decodificación sin pérdida adicional, +18,67MiB de payload. No se borró contenido ni se sustituyeron shaders. 480 texturas del player: cero BC7/ETC1 |
+| 2026-11-05 | VPK01-AUDIO | Player05 compiló sin errores; auditoría nativa detectó 424 Vorbis pese al fallback HEVAG de API. Overrides PSP2 explícitos y reimportación localizada | **FAIL de preparación de audio en Player05**, conservado. **VERIFIED final:** 424 HEVAG, frecuencia/canales/duración/loadType idénticos y recursos resueltos; defaults y GUID conservados, solo overrides PSP2 y reserialización del importador. OGG originales intactos |
+| 2026-11-05 08:44 UTC | VPK01-BUILD | Build06: `-batchmode -quit -buildTarget PSP2 -projectPath <copia_privada_2018> -executeMethod HSWFirstVitaBuild.Build -logFile <privado>` | **VERIFIED PASS:** Succeeded, 0 errores, 602 warnings, 3:07.474 de BuildPipeline. 23 escenas serializadas en orden, arranque SplashLoader; 140 shaders/245 passes, programas ConsoleVS/ConsoleFS. Warnings deferred de Wiggler conservados; fidelidad en hardware UNTESTED |
+| 2026-11-05 | VPK01-PACKAGE | SELF nativo y runtime completos; procedimiento local de empaquetado, ajuste exclusivo de SFO al ID del propietario | **VERIFIED PASS integridad:** `224906503` bytes, 291 entradas, ZIP/CRC y hashes de runtime PASS, SHA256 `4180fb1eaefae3b5ec3351d49cc2efd47aee998e05d34e0dd9768e25daab9d36`. TITLE_ID **HGSKW1178**, APP_VER **00.01**. El módulo AOT mantiene su ID técnico de generación como la referencia Evolution; no se parchea su binario. No demuestra ejecución en hardware |
+
+Evidencia ignorada: `local-work/HSW_Recovery/Reports/PSP2_FirstVPK_01`:
+Build01–06, checkpoints antes/después, NativeResourceVerification, Final_Managed,
+Final_SourcePreservation, PackageReceipt/Manifest, FinalLocalDelivery e instrucciones privadas.
+Copia PSP2 permanente: `local-work/HSW_Recovery/HSW290_Unity2018_PSP2_Private01`.
+La base Unity2018 conserva su configuración previa; ningún gate cambió.
+Sin expansión de memoria; perfil PSP2 original Medium conservado, sin forzar FPS/resolución.
+Logger mínimo de Development, sin overlay ni supresión de excepciones, destinado a
+`ux0:data/HGSKW1178/first_boot.log`; su escritura en Vita también es UNTESTED.
+**Pendiente físico:** arranque, menús, botones/touch, audio, gameplay, save/load, memoria,
+rendimiento y suspensión. Persisten los límites heredados de recuperación, incluido catálogo
+incompleto y shader provisional. Siguiente paso: instalación manual privada, conservar log y
+cualquier código/volcado de cierre. No es versión pública ni certificación de port jugable.
+
 ## New-entry template
 
 ```text
