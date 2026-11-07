@@ -1,5 +1,12 @@
 # World: auditoría de arranque y ensayo privado 00.04
 
+**Seguimiento físico del propietario:** 00.04 inicia, mantiene 60 FPS y vuelve
+al LiveArea durante Loading. Estado SaveLoader, última completada
+`screen loaded SaveLoader`, `persistent OK`; error de DeleteExpiredDailyEvents
+por nombre de archivo vacío. No se interpreta el PASS de Editor de este informe
+como PASS en Vita. La investigación y el siguiente ensayo se registran en
+[SaveLoader / VPK 5](PSP2_SAVELOADER_VPK05_2026-11-07.md).
+
 Fecha UTC: 2026-11-07; fecha local del encargo: 6 de noviembre, Colombia.
 Autorización expresa del propietario para esta auditoría, correcciones, pruebas
 Unity 2018 y siguiente VPK privado. **No aprueba fases:** P00 ACTIVE, 0/13 aprobadas,
