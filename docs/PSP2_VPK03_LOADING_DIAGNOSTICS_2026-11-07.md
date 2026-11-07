@@ -1,5 +1,11 @@
 # World: VPK 2 físico y preparación del VPK 3
 
+**Actualización física posterior:** el propietario confirmó arranque y máximo60
+en 00.03, pero Loading/congelación/LiveArea persisten. La foto sitúa la última DONE
+en SaveLoader y muestra error explícito del servicio offline. La [auditoría 00.04](PSP2_STARTUP_OFFLINE_AUDIT_VPK04_2026-11-07.md)
+registra esa evidencia, diferencias de transportes y el siguiente VPK privado.
+Los estados UNTESTED de este documento corresponden a su preparación/entrega original.
+
 Registro UTC 2026-11-07 (6 de noviembre en Colombia). Autorización expresa del
 propietario en este encargo: investigar, corregir con evidencia, validar en Editor y
 generar un tercer VPK **privado**, usando exclusivamente la copia Unity 2018.
