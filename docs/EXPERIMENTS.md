@@ -95,6 +95,34 @@ rendimiento y suspensión. Persisten los límites heredados de recuperación, in
 incompleto y shader provisional. Siguiente paso: instalación manual privada, conservar log y
 cualquier código/volcado de cierre. No es versión pública ni certificación de port jugable.
 
+## Primer crash físico y corrección del player — 2026-11-05 UTC
+
+| Fecha UTC | ID | Evidencia y cambio | Resultado real |
+| --- | --- | --- | --- |
+| 2026-11-05 | VPK02-CRASH | Dump SHA256 `618e9e2c6f0259e4bcbd2c97eac57e094db0be65a173358e305f85c8d873fabb`; símbolos exactos 00.01 y herramienta SDK local | **VERIFIED FAIL de arranque 00.01:** Unity_main_thread PC=0, LR=0x81e89c9d en InitializeGXM +0x9a, llamada sceRazorGpuCaptureEnableSalvage. Mono/AOT ya cargados; Razor ausente entre módulos. **OWNER-REPORTED:** solo imagen inicial/LiveArea. No se atribuye a OOM/audio/texturas ni se cambia expansión de memoria |
+| 2026-11-05 09:15 UTC | VPK02-NORMAL | BuildOptions.None, logger propio bajo HSW_PSP2_BOOT_LOG, APP_VER 00.02; mismo Unity2018 PSP2 Mono2x y recursos | **VERIFIED PASS compilación:** 0 errores/602 warnings, 3:06.498. Player normal coincide con plantilla instalada; InitializeGXM omite Razor. 23 escenas, 480 texturas compatibles, 424 HEVAG y proveedores/perfil PSP2 verificados. Sin eliminación de contenido o cambios de calidad/memoria |
+| 2026-11-05 | VPK02-PACKAGE | Empaquetado privado, SFO HGSKW1178/00.02 | **PASS integridad:** 179698719 bytes, 284 entradas, CRC/runtime hashes. SHA256 `9e0f3b10e978d3e782a8738f51e28fcff6ca47bb2bf5f62acd876e6dcda5a1e1`. **UNTESTED:** arranque y funcionamiento físico de 00.02; instalar manualmente y conservar nuevo dump/log si falla |
+
+Evidencia ignorada: `local-work/HSW_Recovery/Reports/PSP2_Crash01`.
+00.01 y sus resultados anteriores se conservan; no se reescribe su historia.
+Base Unity2018, Unity2017 y Evolution intactos. P00 ACTIVE, 0/13 aprobaciones;
+sin cambio de ledger, distribución ni instalación automática.
+
+## Segundo VPK físico y tercer ensayo autorizado — 2026-11-07 UTC
+
+Excepción expresa del propietario en el encargo actual para investigar/corregir,
+validar Editor y generar VPK 3 privado; no aprueba fases. Se preserva el cambio del
+player normal de VPK 2, la base Unity2017 y Evolution; sin ramas nuevas ni descargas.
+Mismos inputs APK/OBB SHA-256 registrados en PREP-RECOVERY-001.
+
+| Fecha UTC | ID | Evidencia/procedimiento | Resultado real |
+| --- | --- | --- | --- |
+| 2026-11-07 | VPK02-HARDWARE-UPDATE | Aclaración expresa del propietario en este chat, vigente sobre la mención contradictoria a VPK1 | **OWNER-REPORTED:** VPK2/00.02 supera crash inicial, muestra primera escena/carga y vuelve a LiveArea sin crash visible, PSVShell >100 FPS y UI anormal. CapUnlocker activo tras reinicio completo, confirmado. No se recibió nuevo dump/log; cierre todavía **NO DIAGNOSTICADO**. No es evidencia de repetición del crash Razor 00.01. |
+| 2026-11-07 | VPK03-RESEARCH | Lectura local D03/D04/D05/BlackScreen/CapUnlocker Evolution y guía de lecciones World; contraste con registros/paquetes/código World existentes | **VERIFIED estático:** conservar BuildOptions.None; audio424HEVAG y adaptaciones offline existentes; World tiene selector de calidad propio y VSync0. **Sin evidencia** para ExpandBy109MB o eliminación de recursos. [Comparación y procedimiento de prueba](PSP2_VPK03_LOADING_DIAGNOSTICS_2026-11-07.md). Resultados de ejecución se añaden al completar; hardware00.03 UNTESTED. |
+| 2026-11-07 | VPK03-EDITOR | Unity2018.2.19f1 PSP2 seleccionado; dos Play35s, SplashLoader y prueba aislada BootLoader; mismos inputs SHA indicados arriba | **VERIFIED:** límite60/VSync1 en cinco calidades, reloj intacto; Splash0 errores sin avanzar/interacción; BootLoader llegó FrontEnd/3DBackground/Sharks con **6 errores Editor** auth/DNA/red documentados. No equivale a PASS limpio ni a PSP2; exclusión DNA ya existente del player conservada. Logs privados separados. |
+| 2026-11-07 | VPK03-BUILD | `-batchmode -quit -buildTarget PSP2 -projectPath <copia_privada> -executeMethod HSWFirstVitaBuild.Build -logFile <privado>`; BuildOptions.None, memoriaNone, diagnóstico propio | **VERIFIED PASS:** 0errores/602warnings, 4:45,410. SELF normal exacto, 18 checks IL/64 marcadores, 23escenas/480texturas/424HEVAG/140shaders245passes conservados. Sin reconversión/reimportación. Fuente original2017/base2018, escenas/assets/metas intactos; comparación de serializados y diferencias opacas de blobs generados documentada, sin patch. |
+| 2026-11-07 | VPK03-PACKAGE | HGSKW1178/00.03, empaquetado privado y copia local verificada | **PASS integridad:**179708740bytes,284entradas,CRC/runtime hashes; SHA256 `5669eff27fb2accae45628111a80ee118dae6f3bfbd9f196ce2d3a244ca5b1f9`. VPK1/VPK2 intactos. **UNTESTED hardware**; cierreVPK2 sin diagnóstico confirmado. Evidencia `Reports/PSP2_VPK03`, [informe y prueba física](PSP2_VPK03_LOADING_DIAGNOSTICS_2026-11-07.md). P00 ACTIVE,0aprobaciones,ledger intacto. |
+
 ## New-entry template
 
 ```text
