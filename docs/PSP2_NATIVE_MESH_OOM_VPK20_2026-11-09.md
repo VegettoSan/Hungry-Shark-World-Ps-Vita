@@ -43,3 +43,8 @@ Paquete privado **HSW_Vita_Test_00.20_HGSKW1178.vpk**,179823913bytes,288entradas
 El receptor PC continúa abierto en192.168.1.8:18194 y añade a vita_live.log. El receptor de tests localhost18195 se detuvo. Instalar20 sobre el título actual sin borrar partida, esperar el menú y repetir el mismo tiburón/nivel de Hawái. No hay botones de diagnóstico ni ventana superpuesta. Comprobar música, controles, entrada al nivel y juego unos minutos. Informar al entrar o al cerrarse para analizar la nueva sesión; no borrar capturas previas. Conservar vita_live.log del PC, ux0:data/HSW_Vita/vita_live.log y vita_live_watch.log, nuevo .psp2dmp si aparece, VPK exacto y ambos archivos de símbolos de20.
 
 **UNTESTED físico20:** mayor margen LPDDR real, tiempo de carga, entrada al nivel, estabilidad y persistencia fría del guardado. No se declara reparado el crash hasta esa comprobación.
+
+
+## Actualización física posterior
+
+20 supera la carga Hawaii_low y sus primeras cámaras. El propietario observa controles y cierre posterior sin crash visible.4427paquetes UDP/local idénticos, último evento GameStateInit comienza, LPDDR87MiB; watcher activo26s tras última emisión. Sin excepción/salida normal registrada ni nuevo dump proporcionado. La evidencia demuestra avance respecto al OOM19, no estabilidad ni causa del cierre nuevo. [Investigación y candidata21](PSP2_GAMESTATEINIT_IO_VPK21_2026-11-09.md).
