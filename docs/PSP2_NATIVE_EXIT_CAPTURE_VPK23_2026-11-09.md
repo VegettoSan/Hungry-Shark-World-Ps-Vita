@@ -43,3 +43,8 @@ CRC/hashes/espejo/siete símbolos exactos y símbolos adicionales del plugin ver
 3. Guardar VPK exacto, VPK23_ExactSymbols.zip, VPK23_NativePluginSymbols.zip, manifiestos/recibos privados. Correlacionar sesión/hilo/heartbeats; la última línea no identifica por sí sola la causa.
 
 **Estado:** diagnóstico que conserva las reparaciones funcionales de 22. No hay nueva reparación demostrada del cierre posterior. No se declara solucionado ni gameplay estable en hardware.
+
+
+## Resultado físico posterior de 23
+
+**FAIL hardware:**cierre durante poolfila37;5278UDP/localexactos. **VERIFIED:**captura nativa Mono reporta agotamiento type0/mscorlib1024 y observadorlibcexit9029usdespués,mismo hilo. Causa de23 identificada;sin dump nuevo. [Reparación candidata24](PSP2_MONO_TRAMPOLINES_SAVE_IO_VPK24_2026-11-09.md).
