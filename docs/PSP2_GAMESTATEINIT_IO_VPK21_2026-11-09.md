@@ -33,3 +33,8 @@ Se conservan fallos locales de herramientas: catch nuevo sin namespace System, c
 Paquete privado `HSW_Vita_Test_00.21_HGSKW1178.vpk`,179827934bytes/288entradas. SHA256 `f521641e8114e68b2b5069148e7dd270549f4bfcdc56163e5cea40d518ba89fc`. CRC/hashes de todos los miembros y espejos correctos. Se conservan VPK21_ExactSymbols.zip (7archivos), VPK21_NativePluginSymbols.zip, manifiestos y rollback20 guardado/dry-run. Archivo diagnóstico y resultados privados en Reports/PSP2_VPK21.
 
 Receptor PC18194 continúa abierto y añade a vita_live.log; el receptor de tests18195 se cerró. Instalar21 sobre el título existente sin borrar la partida, esperar menú y repetir la misma entrada a Hawái. No hay ventana ni botones de diagnóstico. Avisar al llegar o cerrar; copiar después ux0:data/HSW_Vita/vita_live.log y vita_live_watch.log, y cualquier nuevo .psp2dmp, conservando VPK/símbolos21 exactos. Comparar las mismas fronteras de arranque y los nuevos BEFORE/DONE/kernelMain. **UNTESTED físico21:** tiempo real, punto preciso del cierre, entrada/estabilidad de gameplay. No se declara solucionado el cierre20.
+
+
+## Actualización física posterior
+
+Captura21:5084mensajes UDP/local idénticos, última inicialización de pool CrabLarge fila11/tamaño1. No excepción/OOM/dump nuevo aportado; memoria kernel disponible en los snapshots. Primera cámara de menú73,475s y ventanas de copias12,152s antes de ella, frente a98,176s/39,226s en20 (sesiones distintas). Investigación22 reprodujo defectos de IA y verificó gameplay del Editor; el cierre PSP2 sigue pendiente. [Informe22](PSP2_AI_LIFECYCLE_GAMEPLAY_VPK22_2026-11-09.md).
