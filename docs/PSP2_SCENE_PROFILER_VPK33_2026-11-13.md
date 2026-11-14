@@ -45,3 +45,8 @@ El control de fuentes bloqueó cinco materiales modificados únicamente en la co
 Before/AfterZIP,patch privado,siete símbolos exactos+plugin yrollbackguardado33→32 en seco PASS. VPK32 preservada. Unity queda abierto;fixtures fuera del player. Solo documentación saneada en el repositorio;P00ACTIVE0/13.
 
 **UNTESTED físico33:** FPS sostenidos,pausas/cargas,memoria,audio audible,guardadofrío y estabilidad prolongada. Son mejoras acotadas de trabajo redundante;no se presenta como resuelto el cuello dominante de gameplay. Las cifras deSharks son un benchmark deconsulta sobre esa jerarquía,no prueba de frecuencia de invocación del preloader para cada raíz. Evidencias,fuentes recuperadas,capturas,perfiles binarios y checkpoints permanecen privados e ignorados.
+
+
+## Resultado físico comunicado después del cierre 33
+
+13 de noviembre local / 14 UTC, **OWNER-REPORTED:** el propietario probó físicamente VPK 33. El juego continúa funcionando, sin mejora significativa de FPS y con pausas de varios segundos al confirmar recompensas/compras, cambiar modelos y navegar. La continuación correctiva se registra en [el informe 34](PSP2_MENU_STORAGE_VPK34_2026-11-13.md). Este resultado no modifica retrospectivamente las evidencias ni los gates del cierre 33.
