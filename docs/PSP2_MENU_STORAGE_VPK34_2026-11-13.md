@@ -59,3 +59,12 @@ VPK privada: `local-work/HSW_Recovery/Reports/PSP2_VPK34/HSW_Vita_Test_00.34_HGS
 CRC y hashes por miembro, Before/After, símbolos exactos y rollback 34→33 en seco: PASS. VPK 33 queda intacta. Fuentes, perfiles, capturas y fixtures permanecen privados, fuera del player. No publicación ni gates aprobados.
 
 **UNTESTED físico 34:** reducción real de pausas, guardado frío y durabilidad, memoria, FPS, audio audible y estabilidad prolongada. Siguiente paso: comparar reclamar/confirmar con 33 en Vita; después separar la primera carga/activación de modelos y LevelSelect. En gameplay, medir zonas escasas y densas con recorrido y reloj controlados, conservando población. No repetir la auditoría ni descargar las cachés ya resueltas.
+
+
+## Prueba física posterior — 2026-11-14
+
+REPORTED por el propietario: VPK34 no aporta una mejora perceptible de gameplay. La compra del mapa sí se completó con una pausa aproximada de3s, menor que antes; es una observación subjetiva, sin A/B controlado. Persisten las trabas al aparecer objetos en menús.
+
+El selector quedó sin responder a controles, volver y tacto durante el primer tutorial después de una partida. Reiniciar y no tocar los controles permitió completar el recorrido. También reportó sonido humano superpuesto en dos partidas. Causas físicas no confirmadas.
+
+Reportó reinicio de progreso al instalar34, pero no recuerda si sobrescribió33 o eliminó la burbuja. No se atribuye la pérdida al instalador o al guardado sin inspeccionar savedata; no se modificó su partida. Los pendientes marcados UNTESTED en la entrega original son históricos: esta prueba aporta las observaciones anteriores y deja persistencia/reset, audio y medidas físicas controladas abiertos. Continuación correctiva y culling: [VPK35](PSP2_CULLING_INPUT_VPK35_2026-11-14.md).
